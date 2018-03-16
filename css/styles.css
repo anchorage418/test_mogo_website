@@ -74,7 +74,7 @@ button {
   color: #fff;
 }
 
-.logo-block,
+/*.logo-block,*/
 .mail-btn {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
@@ -82,6 +82,8 @@ button {
 
 .logo-block {
   font-size: 30px;
+  -ms-flex-preferred-size: 12%;
+    flex-basis: 12%;
 }
 
 .main-header nav,
@@ -121,6 +123,8 @@ button {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-header nav ul,
@@ -139,8 +143,11 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 72%;
-      flex-basis: 72%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-header nav ul,
@@ -166,7 +173,8 @@ button {
 }
 
 .main-header nav li {
-  margin-left: 44px;
+  /*margin-left: 44px;*/
+  padding-top: 12px;
   padding-bottom: 8px;
   border-bottom: 4px solid transparent;
 }
@@ -498,8 +506,12 @@ nav li:nth-child(7):hover .search-img {
 }
 
 .section-3 {
-  padding-bottom: 0;
+  /*padding-bottom: 0;*/
   margin-bottom: 80px;
+}
+
+.section-3 .container {
+  padding-bottom: 0;
 }
 
 .img-1 {
@@ -582,7 +594,7 @@ nav li:nth-child(7):hover .search-img {
 }
 
 /*main > section:nth-child(6) .container*/
-.section-6 .container {
+.section-5 .container {
   padding-bottom: 0;
 }
 
@@ -603,7 +615,7 @@ nav li:nth-child(7):hover .search-img {
   opacity: 1;
 }
 
-.section-7 {
+.section-6 {
   background: #d9d9d9 url(../images/people_said_banner.png) center/ cover;
 }
 
@@ -671,6 +683,7 @@ nav li:nth-child(7):hover .search-img {
 
 .map-block {
   background: #d9d9d9 url(../images/map.png) center/ cover;
+  /*margin: 5% 0 0;*/
 }
 
 .map-block h2 {
@@ -977,7 +990,7 @@ footer .container {
     font-size: 64px;
   }
 
-  .menu__menu-item:first-child {
+  .menu-item:first-child {
     margin-left: 2%;
   }
 
@@ -1037,6 +1050,18 @@ footer .container {
 }
 
 @media (max-width: 576px) {
+  nav .logo-block {
+    flex-basis: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .main-header nav ul {
+    flex-basis: 100%;
+    flex-direction: column;
+    margin: 32px 0 0;
+  }
+
   .top-head-block p {
     font-size: 30px;
   }
@@ -1045,12 +1070,12 @@ footer .container {
     font-size: 44px;
   }
 
-  .menu__menu-item {
+  .menu-item {
     -ms-flex-preferred-size: 44%;
         flex-basis: 44%;
   }
 
-  .menu__menu-item:nth-child(1n) {
+  .menu-item:nth-child(1n) {
     margin-left: 2%;
   }
 
